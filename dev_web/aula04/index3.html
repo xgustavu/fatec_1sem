@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Exemplo</title>
+
+    <style>
+      p {
+        border: 2px solid red;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      div {
+        border: 2px dotted blue;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      span {
+        background-color: yellow;
+      }
+
+      .linha {
+        display: inline;
+      }
+
+      .bloco {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <code>Elementos div e p possuem o comportamento de bloco</code>
+
+    <div>
+      <p>Jambeiro</p>
+      <p>Paraibuna</p>
+      <p>Salesópolis</p>
+    </div>
+
+    <code>Elemento p assumiu o comportamento inline</code>
+
+    <div>
+      <p class="linha">Jacareí</p>
+      <p class="linha">Guararema</p>
+      <p class="linha">Santa Branca</p>
+    </div>
+
+    <code>Elementos do tipo inline</code>
+
+    <p>
+      span é um elemento inline: <span>Redenção da Serra</span> e
+      <span>São Luíz do Paraitinga</span>.
+    </p>
+
+    <code>Elementos do tipo inline com comportamento do tipo bloco</code>
+
+    <p>
+      span é um elemento inline <span class="bloco">Cunha</span> e
+      <span class="bloco">Lagoinha</span> mas aqui assumiu o comportamento de
+      bloco.
+    </p>
+  </body>
+</html>

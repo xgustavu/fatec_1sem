@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 5</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: calibri;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+      #menu{
+        display: flex;
+        width: 100vw;
+        border-bottom: 1px solid white;
+        justify-content: space-between;
+
+        /* flex-direction: row; */
+        /* box-sizing: border-box; */
+      }
+      #corpo{
+
+        width: 100vw;
+        background-color: #444;
+        flex: 100;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        /* padding: 25vh 45vw; */
+      }
+      #rodape{
+        display: flex;
+        width: 100vw;
+        flex: 2 80px;
+        border-bottom: 80px ;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+      }
+      #titulo{
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+      }
+      #avatar{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      #avatar > div{
+        margin-right: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #444;
+      }
+      #botao{
+        margin-top: 15px;
+        padding: 10;
+        width: 10vw;
+      }
+      input{
+        
+      }
+      h1{
+        margin: 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="imagens/css.png" alt="CSS_logo" height="125">
+            <div>
+            <h1>CSS3</h1>
+            </div>
+        </div>
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="imagens/avatar.jpg" alt="" height="125">
+        </div>
+    </div>
+
+    <div id="corpo">
+        <form>
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label for="">e-mail:</label>
+                    <input type="email" name="mail">
+                </div>
+                <div>
+                    <label for="">senha:</label>
+                    <input type="password" name="senha">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="botao">
+                    <input type="reset" value="Limpar" id="botao">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="rodape">
+      <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+
+      <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+
+      <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+  </body>
+</html>
