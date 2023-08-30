@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 10</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: calibri;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+      #menu{
+        display: flex;
+        width: 100vw;
+        border-bottom: 1px solid white;
+        justify-content: space-between;
+
+        /* flex-direction: row; */
+        /* box-sizing: border-box; */
+      }
+      #corpo{
+        /* width: 100vw; */
+        background-color: #444;
+        flex: 100;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        /* flex-direction: column; */
+        /* padding: 25vh 45vw; */
+      }
+      #rodape{
+        display: flex;
+        width: 100vw;
+        flex: 2 80px;
+        border-bottom: 80px ;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+      }
+      #titulo{
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+      }
+      #avatar{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      #avatar > div{
+        margin-right: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #444;
+      }
+      #botao{
+        /* margin-top: 5px; */
+        flex-direction: row;
+        padding: 10;
+        margin-left: 5px;
+        width: 80px; height: 40px;
+        background-color: #1E90FF;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+      }
+      #botoes{
+        justify-content: right;
+        display: flex;
+      }
+      #dados{
+        margin-bottom: 10px;
+        display: flex;
+        width: 445px; height: 30px;
+        border-radius: 10px;
+        justify-content: center;
+      }
+      #direita{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: cyan; */
+        width: 100vw;
+        height: 100%;
+        flex: 100;
+      }
+      #esquerda{
+        text-decoration: none;
+        color: #fbfbfb;
+        flex-direction: column;
+        display: flex;
+        /* justify-content: left; */
+        /* background-color: yellow; */
+        flex: 200px;
+        height: 100%;
+        justify-content: space-between;
+      }
+      #exercicios{
+        text-decoration: none;
+        color: #4169E1;
+        flex-direction: column;
+        display: flex;
+        font-size: large;
+      }
+      a:link{
+        text-decoration: none;
+        color: #4169E1;
+      }
+      a:visited{
+        color: #4169E1;
+        text-decoration: none;
+      }
+      a:visited:hover{
+        color: #FF1493
+      }
+      a:link:hover{
+        color: #FF1493;
+      }
+      fieldset{
+        align-items: center;
+        justify-content: center;
+        width: 450px; height: 180px;
+        border-radius: 10px;
+        color: white;
+      }
+      h1{
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="imagens/css.png" alt="" height="125">
+            <div>
+            <h1>CSS3</h1>
+            </div>
+        </div>
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="imagens/avatar.jpg" alt="" height="90">
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="esquerda">
+            <div id="exercicios">
+                <a href="ex01.html">Exercício 01</a>
+                <a href="ex02.html">Exercício 02</a>
+                <a href="ex03.html">Exercício 03</a>
+                <a href="ex04.html">Exercício 04</a>
+                <a href="ex05.html">Exercício 05</a>
+                <a href="ex06.html">Exercício 06</a>
+                <a href="ex07.html">Exercício 07</a>
+                <a href="ex08.html">Exercício 08</a>
+                <a href="ex09.html">Exercício 09</a>
+            </div>
+            <div id="imagem">
+                <img src="imagens/html.png" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        <div id="direita">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label for="">e-mail:</label>
+                        <input type="email" name="mail" id="dados">
+                    </div>
+                    <div>
+                        <label for="">senha:</label>
+                        <input type="password" name="senha" id="dados">
+                    </div>
+                    <div id="botoes">
+                        <input type="submit" value="Enviar" id="botao">
+                        <input type="reset" value="Limpar" id="botao">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div id="rodape">
+      <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+
+      <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+
+      <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>Exercício 4</title>
+    <title>Exercício 6</title>
     <style>
       html {
         display: flex;
@@ -31,6 +31,11 @@
         width: 100vw;
         background-color: #444;
         flex: 100;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        /* flex-direction: column; */
+        /* padding: 25vh 45vw; */
       }
       #rodape{
         display: flex;
@@ -44,13 +49,11 @@
       #titulo{
         display: flex;
         align-items: center;
-        /* justify-content: left; */
         font-size: 50px;
       }
       #avatar{
         display: flex;
         align-items: center;
-        /* justify-content: right; */
         font-size: 20px;
         margin-right: 15px;
       }
@@ -60,18 +63,48 @@
         font-weight: bold;
         color: #444;
       }
+      #botao{
+        /* margin-top: 5px; */
+        flex-direction: row;
+        padding: 10;
+        margin-left: 5px;
+        width: 80px; height: 40px;
+        background-color: #1E90FF;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+      }
+      #botoes{
+        justify-content: right;
+        display: flex;
+      }
+      #dados{
+        margin-bottom: 10px;
+        display: flex;
+        width: 445px; height: 30px;
+        border-radius: 10px;
+        justify-content: center;
+      }
+      fieldset{
+        align-items: center;
+        justify-content: center;
+        width: 450px; height: 180px;
+        border-radius: 10px;
+        color: white;
+      }
       h1{
         margin: 0;
       }
-
     </style>
   </head>
 
   <body>
     <div id="menu">
         <div id="titulo">
-            <img src="imagens/css.png" alt="CSS_logo" height="125">
-            <div><h1>CSS3</h1></div>
+            <img src="imagens/css.png" alt="" height="125">
+            <div>
+            <h1>CSS3</h1>
+            </div>
         </div>
         <div id="avatar">
             <div>Bill Gates</div>
@@ -79,7 +112,25 @@
         </div>
     </div>
 
-    <div id="corpo"></div>
+    <div id="corpo">
+        <form>
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label for="">e-mail:</label>
+                    <input type="email" name="mail" id="dados">
+                </div>
+                <div>
+                    <label for="">senha:</label>
+                    <input type="password" name="senha" id="dados">
+                </div>
+                <div id="botoes">
+                    <input type="submit" value="Enviar" id="botao">
+                    <input type="reset" value="Limpar" id="botao">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
     <div id="rodape">
       <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
