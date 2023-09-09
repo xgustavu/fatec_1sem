@@ -7,8 +7,7 @@ while(s != senha && i < 2){
     console.log("Senha incorreta!")
     s = prompt("Insira a senha:");
     i = i + 1;
-}
-if(i > 3){
+}if(i >= 2){
     console.log("Excedeu o número de tentativas!");
 }else{
     console.log("Acesso liberado!")

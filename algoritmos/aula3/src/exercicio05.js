@@ -6,5 +6,4 @@ while(i < 5){
     c = n1 + c;
     i = i + 1;
 }
-
 console.log("Somatório:", c);

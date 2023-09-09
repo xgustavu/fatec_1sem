@@ -1,5 +1,5 @@
 i = 0;
-c = -100000000000000;
+c = -Infinity;
 
 while(i < 5){
     n1 = parseInt(prompt("Insira um número:"));

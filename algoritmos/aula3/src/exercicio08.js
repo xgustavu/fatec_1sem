@@ -3,8 +3,7 @@ senha = "naosei";
 s = prompt("Insira a senha:");
 
 while(s != senha){
-    console.log("Senha incorreta!")
+    console.log("senha incorreta!")
     s = prompt("Insira a senha:");
 }
-
-prompt("Acesso liberado!")
+prompt("Aceso liberado!")

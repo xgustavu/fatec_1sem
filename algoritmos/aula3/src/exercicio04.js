@@ -1,8 +1,9 @@
 n1 = parseInt(prompt("Insira um número inteiro:"));
 n2 = parseInt(prompt("Insira outro número inteiro:"));
 i = 0;
+aux = 0;
 
-if(n1 < n2){
+/* if(n1 < n2){
     while(n1 <= n2){
         i = n1 + i;
         n1 = n1 + 1;
@@ -14,4 +15,15 @@ if(n1 < n2){
         n2 = n2 + 1;
     }
     console.log("Somatório:", i);
+} */
+
+if(n1 >= n2){
+    aux = n1;
+    n1 = n2;
+    n2 = aux;
 }
+while(n1 <= n2){
+    i = n1 + i;
+    n1 = n1 + 1;
+    }
+console.log("Somatório:", i);
