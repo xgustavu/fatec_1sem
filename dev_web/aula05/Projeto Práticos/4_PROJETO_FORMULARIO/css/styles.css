@@ -101,6 +101,7 @@ textarea {
 
 .optional_list li {
 	list-style: none;
+	align-items: flex-start;
 }
 
 .btn-submit {
