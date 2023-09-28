@@ -21,7 +21,7 @@
 
 /* ADDRESS CONTAINER */
 #address-container {
-    background-image: url('../img/project_bg.jpg');
+    background-image: url('../img/fatec.jpg');
     background-size: cover;
     background-position-x: -130px;
     color: #FFF;
@@ -64,6 +64,10 @@
 /* FORM CONTAINER */
 #form-container {
     padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #form-container h2 {

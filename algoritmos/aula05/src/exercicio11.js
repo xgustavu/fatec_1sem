@@ -13,7 +13,7 @@ c = 0;
 while(i < matriz.length && i2 < matriz.length){
     console.log(matriz[i][i2]);
     i2++;    
-    i = i + 1;
+    i++;
     c = matriz[i],[i2] + c;
 }
 console.log(c);
