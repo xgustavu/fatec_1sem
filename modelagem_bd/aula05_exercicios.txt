@@ -1,0 +1,94 @@
+Exercício 1
+
+insert into tbaluno(nome, id) values
+('Ana Maria', 1),
+('Luiz Carlos', 2),
+('Maria Silva', 3),
+('Renato Rodrigues', 4),
+('Carla Santiago', 5);
+
+
+Exercício 2
+
+insert into tbdisciplina(id,nome,carga) values
+(1, 'Modelagem de Banco de Dados', 80),
+(2, 'Design Digital', 80),
+(3, 'Estrutura de Dados', null),
+(4, 'Experiência do Usuário', 40),
+(5, 'Aprendizado de Máquina', null),
+(6, 'Inglês I', null);
+
+
+Exercício 3
+
+insert into tbmatricula(iddisciplina,idaluno,nota) 
+values
+(3,1,7.8),
+(1,5,80),
+(1,2,null),
+(6,2,40),
+(3,4,null),
+(5,4,8.9),
+(6,4,null);
+
+
+Exercício 4
+
+update tbmatricula
+set nota = nota + 0.5
+where nota is not null;
+
+select d.nome as "Disciplina", a.nome as "Aluno", nota
+from tbdisciplina as d, tbaluno as a, tbmatricula as m where d.id = m.iddisciplina and a.id = m.idaluno order by "Aluno";
+
+
+
+Exercício 5
+
+update tbmatricula
+set nota = nota + 0.2
+from tbdisciplina
+where tbdisciplina.id = tbmatricula.iddisciplina and
+tbdisciplina.nome = 'Modelagem de Banco de Dados' AND
+nota is not null;
+
+
+Exercício 6
+
+update tbmatricula
+set nota = 5.0
+from tbdisciplina as d, tbaluno as a
+where d.id = tbmatricula.iddisciplina and
+a.id = tbmatricula.idaluno AND
+d.nome = 'Inglês I' and 
+a.nome = 'Luiz Carlos';
+
+
+Exercício 7
+
+update tbmatricula
+set nota = 0.0
+WHERE nota is null;
+
+
+Exercício 8
+
+delete from tbmatricula
+where nota = 0;
+
+
+Exercício 9
+
+delete from tbmatricula as m
+using tbdisciplina as d, tbaluno as a
+where d.id = m.iddisciplina and 
+a.id = m.idaluno and d.nome = 'Inglês I' and a.nome = 'Luiz Carlos';
+
+
+Exercício 10
+
+delete from tbmatricula;
+
+
+
+
