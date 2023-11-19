@@ -1,0 +1,14 @@
+CREATE TABLE tarefa (
+  idtarefa INTEGER NOT NULL,
+  idtarefapai INTEGER NOT NULL,
+  nome VARCHAR NULL,
+  valor FLOAT NULL,
+  PRIMARY KEY(idtarefa)
+);
+
+insert into tarefa values
+(1, 1, 'Aula de Modelagem', NULL),
+(2, 1, 'Prestar atenção', 10),
+(3, 1, 'Fazer exercícios', 5);
+
+select * from tarefa t where t.idtarefapai = 1;

@@ -1,0 +1,35 @@
+CREATE TABLE bairro (
+  idbairro INTEGER NOT NULL,
+  cidade_idcidade INTEGER NOT NULL,
+  nome VARCHAR(20) NULL,
+  PRIMARY KEY(idbairro)
+);
+
+CREATE TABLE cidade (
+  idcidade INTEGER NOT NULL,
+  nome VARCHAR(40) NULL,
+  uf CHAR(2) NULL,
+  PRIMARY KEY(idcidade)
+);
+
+CREATE TABLE endereco (
+  idendereco INTEGER NOT NULL,
+  bairro_idbairro INTEGER NOT NULL,
+  logradouro VARCHAR(30) NULL,
+  numero INTEGER NULL,
+  cep INTEGER NULL,
+  PRIMARY KEY(idendereco)
+);
+
+insert into cidade values
+(1, 'São José dos Campos', 'SP'),
+(2, 'Jacareí', 'SP');
+insert into bairro values
+(1,1, 'Jd. Aquárius'),
+(2,2, 'Faria Lima');
+insert into endereco values
+(1,1,'Rua dos Peixes', 10, 12245000),
+(2,2,'Faria Lima', 1000, 12400000);
+
+select c.nome, c.uf, b.nome, logradouro, numero, cep from cidade c, bairro b, endereco e where
+c.idcidade = b.cidade_idcidade and b.idbairro = e.bairro_idbairro;

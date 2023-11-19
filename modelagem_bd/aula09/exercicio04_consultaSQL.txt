@@ -1,0 +1,36 @@
+CREATE TABLE ocupa (
+  vaga_nome VARCHAR(10) NOT NULL,
+  veiculo_placa VARCHAR(7) NOT NULL,
+  valor FLOAT NULL,
+  inicio TIMESTAMP NULL,
+  fim TIMESTAMP NULL,
+  PRIMARY KEY(vaga_nome, veiculo_placa)
+);
+
+CREATE TABLE vaga (
+  nome VARCHAR(10) NOT NULL,
+  PRIMARY KEY(nome)
+);
+
+CREATE TABLE veiculo (
+  placa VARCHAR(7) NOT NULL,
+  marca VARCHAR(20) NULL,
+  modelo VARCHAR(20) NULL,
+  PRIMARY KEY(placa)
+);
+
+insert into veiculo values
+('ABC1234', 'Honda', 'Fit'),
+('DEF5678', 'Nissan', 'Kicks');
+insert into vaga values
+('A1'),
+('B1');
+insert into ocupa values
+('A1', 'ABC1234', 10.00, '2023-11-17 18:00:00', '2023-11-16 23:00:00'),
+('B1', 'DEF5678', 10.00, '2023-11-17 18:00:00', '2023-11-16 23:00:00');
+
+select * from veiculo;
+select * from ocupa;
+select * from vaga;
+select * from veiculo ve, vaga v, ocupa o where
+ve.placa = o.veiculo_placa and o.vaga_nome = v.nome;

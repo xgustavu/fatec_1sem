@@ -1,0 +1,23 @@
+CREATE TABLE imovel (
+  idimovel INTEGER NOT NULL,
+  idproprietario INTEGER NOT NULL,
+  idinquilino INTEGER NOT NULL,
+  descricao VARCHAR(50) NULL,
+  PRIMARY KEY(idimovel)
+);
+
+CREATE TABLE pessoa (
+  idpessoa INTEGER NOT NULL,
+  nome VARCHAR(40) NULL,
+  PRIMARY KEY(idpessoa)
+);
+
+insert into pessoa values
+(1, 'Renan'),
+(2, 'Filipe');
+insert into imovel values
+(1, 1, 2, 'Mansão no Vila Branca'),
+(2, 2, 1, 'Apartamento em SJC');
+
+select * from imovel i, pessoa p where
+p.idpessoa = i.idproprietario; 
