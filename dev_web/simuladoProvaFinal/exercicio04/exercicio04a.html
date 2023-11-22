@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04a</title>
+</head>
+<body>
+
+    <div id="interface">
+        <h2>Título da Interface</h2>
+        <button onclick="solicitarNumero()">Clique Aqui</button>
+        <img src="fatec.jpg" alt="Imagem" id="imagem">
+    </div>
+
+    <script>
+        function solicitarNumero() {
+            var numeroDigitado = prompt("Digite um número inteiro:");
+
+            var numero = parseInt(numeroDigitado);
+
+            if (!isNaN(numero)) {
+                var antecessor = numero - 1;
+                var sucessor = numero + 1;
+
+                alert("Número Digitado: " + numero +
+                      "\nAntecessor: " + antecessor +
+                      "\nSucessor: " + sucessor);
+            } else {
+                alert("Por favor, digite um número inteiro válido.");
+            }
+        }
+    </script>
+
+</body>
+</html>

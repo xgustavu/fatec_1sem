@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04b</title>
+</head>
+<body>
+
+    <div id="interface">
+        <h2>Título da Interface</h2>
+        <button onclick="solicitarInformacoes()">Clique Aqui</button>
+        <img src="fatec.jpg" alt="Imagem" id="imagem">
+    </div>
+
+    <script>
+        function solicitarInformacoes() {
+            var nomeProduto = prompt("Digite o nome do produto:");
+
+            if (nomeProduto !== null && nomeProduto !== "") {
+                var precoProduto = prompt("Digite o preço do produto:");
+                var preco = parseFloat(precoProduto);
+
+                if (!isNaN(preco)) {
+                    alert("Produto: " + nomeProduto + "\nPreço: R$" + preco.toFixed(2));
+                } else {
+                    alert("Por favor, digite um preço válido.");
+                }
+            } else {
+                alert("Por favor, digite o nome do produto.");
+            }
+        }
+    </script>
+
+</body>
+</html>

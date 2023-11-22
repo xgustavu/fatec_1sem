@@ -1,17 +1,21 @@
 /* general */
 html {
-	font-family: Helvetica, sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* header */
 .banner {
 	width: 100%;
 	height: 600px;
-	background-image: url('../img/capa2.jpg');
+	background-image: url('../img/fatec.jpg');
 	background-position: center;
 	position: relative;
+	background-color: #222;
+	border-radius: 20px;
 }
-
+.container{
+	background-color: #222;
+}
 .box-container {
 	width: 400px;
 	height: 200px;
@@ -53,6 +57,7 @@ html {
 	bottom: 0;
 	width: 100%;
 	height: 175px;
+	border-radius: 20px;
 }
 
 .company-info-background {
@@ -84,6 +89,8 @@ html {
 	max-width: 1200px;
 	padding: 30px 10%;
 	padding-bottom: 0;
+	background-color: #222;
+	color: white;
 }
 
 .service-box {
@@ -107,6 +114,7 @@ html {
 	line-height: 150px;
 	padding: 20px;
 	box-sizing: border-box;
+	border-radius: 20px;
 }
 
 .service-title p {
