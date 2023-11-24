@@ -1,0 +1,3 @@
+ex01 - Um relacionamento recursivo ocorre quando uma entidade se relaciona consigo mesma. Isso significa que uma instância de uma entidade pode estar relacionada a outra instância da mesma entidade.
+
+ex02 - As restrições de participação em um relacionamento em um modelo de dados descrevem a quantidade mínima e máxima de instâncias que podem participar do relacionamento entre entidades. Essas restrições podem ser classificadas em participação total e parcial, independentemente do tipo de relacionamento (1:1, 1:N, N:M). 
