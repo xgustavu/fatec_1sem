@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+        <input type="text" id="numeroInput" placeholder="Insira um número:">
+        <button onclick="gerarTabuada()">Enviar</button>
+    </div>
+    <div id="tabuadaResult"></div>
+</body>
+<script>
+    function gerarTabuada() {
+
+    document.getElementById("tabuadaResult").innerHTML = "";
+    var numero = document.getElementById("numeroInput").value;
+
+    for (var i = 1; i <= 10; i++) {
+        var resultado = numero * i;
+        var linhaTabuada = document.createElement("p");
+        linhaTabuada.textContent = numero + " x " + i + " = " + resultado;
+        document.getElementById("tabuadaResult").appendChild(linhaTabuada);
+    }
+}
+</script>
+</html>

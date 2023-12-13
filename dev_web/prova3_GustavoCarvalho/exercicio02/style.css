@@ -1,0 +1,13 @@
+form {
+    border: 1px solid #ffc107;
+    border-radius: 20px;
+}
+a.btn-primary {
+    margin-top: 15px;
+}
+body{
+    background-color: rgb(61, 63, 66);
+}
+img{
+    width: 8.5rem;
+}
